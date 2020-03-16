@@ -34,8 +34,12 @@
 * Создание простой публикации с выбором фото из предложенных
 * Создание сториз
 * Просмотр ленты
-Работаем с интерфейсом главной страницы - именно с него доступны перечисленные функции.
+
+Работаем с интерфейсом мобильной браузерной версии на ОС Android. Пример страницы представлен ниже.
 ![](https://raw.githubusercontent.com/tomskih/fintechQA_5.2/master/page_example.jpg)
+
+Схематично архитектура проекта выглядит так
+![](https://raw.githubusercontent.com/tomskih/fintechQA_5.2/master/PageObjectPatternModel.png)
 
 
 
