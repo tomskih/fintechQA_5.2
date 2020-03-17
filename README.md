@@ -41,9 +41,61 @@
 Схематично архитектура проекта выглядит так
 ![](https://raw.githubusercontent.com/tomskih/fintechQA_5.2/master/PageObjectPatternModel.png)
 
-
-
-
-
 ## Сценарий проверок
+### Описание классов (страниц, блоков страницы)
+#### Страница авторизации по логину-паролю
+```java
+public class LoginPage { 
+	String url = "https://www.instagram.com/accounts/login"
+	Select langSelect
+	Link forgotPassLink, signUpLink
+	Input loginInput, passInput
+	Button loginButton
+	
+}
+```
+#### Главная страница авторизованного пользователя
+```java
+public class MainPage { 
+	String url = "https://www.instagram.com"
+	
+	public class Header {   //хедер
+		Link mainLink
+		Button newStoryButton, inboxButton
+	
+	}
+
+	public class Stories {  //блок со сторизами
+		Button newStoryButton, viewStoryButton
+	
+	}
+
+	public class Tape {     //лента
+		Element post
+		GroupElement suggestions
+
+	}
+
+	public class Footer {     // футер
+		Button homeButton, searchButton, newPublishButton, activityButton, profileButton
+	
+	}
+}
+```
+#### Страница выбора фото при создании публикации
+```java
+public class SelectPhotoPage {
+	Button backButton, okButton
+	Element imageElement
+}
+```
+#### Страница оформления публикации
+```java
+public class NewPhotoPostPage{
+	Button cancelButton, okButton
+	Element imageEditElement
+	Tab editTabs
+	
+}
+```
 ## Выбор инструментов
